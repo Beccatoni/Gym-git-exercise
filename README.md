@@ -150,5 +150,109 @@ $ git push origin --delete test
 To https://github.com/Beccatoni/Gym-git-exercise.git
  - [deleted]         test
 
+ #####
 
- 
+
+
+
+Bundle 2
+
+exercise 2
+ git checkout main
+Switched to branch 'main'
+M       README.md
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+REBECCA@DESKTOP-7D5E1TE MINGW64 ~/Git_Exercises (main)
+$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+
+REBECCA@DESKTOP-7D5E1TE MINGW64 ~/Git_Exercises (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+M       README.md
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+REBECCA@DESKTOP-7D5E1TE MINGW64 ~/Git_Exercises (main)
+$ git pull
+Updating a3bdafb..de5b600
+Fast-forward
+ about.html | 11 +++++++++++
+ home.html  | 11 +++++++++++
+ 2 files changed, 22 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+
+REBECCA@DESKTOP-7D5E1TE MINGW64 ~/Git_Exercises (main)
+$ git checkout  ft/service-redesign
+Switched to branch 'ft/service-redesign'
+M       README.md
+
+REBECCA@DESKTOP-7D5E1TE MINGW64 ~/Git_Exercises (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+M       README.md
+Your branch is up to date with 'origin/main'.
+
+REBECCA@DESKTOP-7D5E1TE MINGW64 ~/Git_Exercises (main)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 905 bytes | 69.00 KiB/s, done.
+From https://github.com/Beccatoni/Gym-git-exercise
+   de5b600..8907086  main       -> origin/main
+Updating de5b600..8907086
+Fast-forward
+ services.html | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ create mode 100644 services.html
+
+REBECCA@DESKTOP-7D5E1TE MINGW64 ~/Git_Exercises (main)
+$ git checkout  ft/service-redesign
+Switched to branch 'ft/service-redesign'
+M       README.md
+
+REBECCA@DESKTOP-7D5E1TE MINGW64 ~/Git_Exercises (ft/service-redesign)
+$ git merge main
+Updating a3bdafb..8907086
+Fast-forward
+ about.html    | 11 +++++++++++
+ home.html     | 11 +++++++++++
+ services.html | 10 ++++++++++
+ 3 files changed, 32 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 services.html
+
+REBECCA@DESKTOP-7D5E1TE MINGW64 ~/Git_Exercises (ft/service-redesign)
+$ git add .
+
+REBECCA@DESKTOP-7D5E1TE MINGW64 ~/Git_Exercises (ft/service-redesign)
+$ git commit -m'modified services page'
+[ft/service-redesign b39528b] modified services page
+ 2 files changed, 154 insertions(+)
+
+REBECCA@DESKTOP-7D5E1TE MINGW64 ~/Git_Exercises (ft/service-redesign)
+$ git push -u origin ft/service-redesign
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.59 KiB | 271.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/Beccatoni/Gym-git-exercise/pull/new/ft/service-redesign
+remote:
+To https://github.com/Beccatoni/Gym-git-exercise.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+
+###
+
+
+
